@@ -1,0 +1,20 @@
+<html>
+    <head>
+            <link href="css/sb-admin-2.min.css" rel="stylesheet">
+            <link href="css/sb-admin-2.css" rel="stylesheet">
+    </head>
+    <body>
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+            <% for(var i=0; i<lista.length; i++) { %>
+                <tr>
+                    <td><%= lista[i].product_name %></td>
+                </tr>
+            <% } %>
+        </table>
+    </body>
+</html>
